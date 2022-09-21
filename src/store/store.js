@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import filmsSlider from '../todo/filmsSlider'
+import CarSlider from '../reducers/car/CarSlider'
+import CategoriesSlider from '../reducers/categories/CategoriesSlider'
+import UserSlider from '../reducers/user/UserSlider'
 
 export const store = configureStore({
     reducer: {
-        films: filmsSlider,
+        car: CarSlider,
+        user: UserSlider,
+        categories: CategoriesSlider,
     },
 })

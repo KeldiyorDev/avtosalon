@@ -11,7 +11,10 @@ const Login = () => {
             "phoneNumber": "+998993466789",
             "password": "student"
         }).then(res => localStorage.setItem("token", res.data.data.token))
+
+        API.get("car?limit=5&page=1").then((res) => console.log(res.data.data))
     }
+
 
     return (
         <LoginWrapper>
